@@ -20,15 +20,4 @@ SRCREV = "${AUTOREV}"
 
 RPROVIDES_${PN} += "u-boot"
 
-DEPENDS_append_dh-stm32mp1-dhcom-common-pdk2 = "u-boot-mkimage-native"
-do_compile_append_dh-stm32mp1-dhcom-common-pdk2 () {
-	uboot-mkimage -A arm -T script -C none \
-		-d ${WORKDIR}/boot.cmd ${WORKDIR}/boot.scr
-}
-
-DEPENDS_append_dh-stm32mp1-dhcor-common-avenger96 = "u-boot-mkimage-native"
-do_compile_append_dh-stm32mp1-dhcor-common-avenger96 () {
-	uboot-mkimage -A arm -T script -C none \
-		-d ${WORKDIR}/boot.cmd ${WORKDIR}/boot.scr
-}
 
