@@ -16,7 +16,7 @@ LOCALVERSION = "-dev5461"
 
 #SRC_URI += "file://0001-.....patch"
 
-COMPATIBLE_MACHINE = "(dh-stm32mp1-dhcom-pdk2|dh-stm32mp1-dhcor-avenger96)"
+COMPATIBLE_MACHINE = "(dh-stm32mp1-dhcom-pdk2|dh-stm32mp1-dhcor-avenger96|dh-stm32mp1-dhcom-drc02)"
 BB_STRICT_CHECKSUM = "0"
 
 
