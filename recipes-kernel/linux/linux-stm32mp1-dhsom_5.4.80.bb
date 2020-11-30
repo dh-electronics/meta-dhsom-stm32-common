@@ -7,12 +7,12 @@ LIC_FILES_CHKSUM="file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 DEPENDS += "lzop-native bc-native"
 
 # select branch 
-SRCBRANCH = "dev/5.4.69_dhsom"
+SRCBRANCH = "dev/5.4.80_dhsom"
 
 # use latest source
 SRCREV = "${AUTOREV}"
 
-LOCALVERSION = "-dev5469"
+LOCALVERSION = "-dev5480"
 
 #SRC_URI += "file://0001-.....patch"
 
