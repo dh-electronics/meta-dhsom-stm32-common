@@ -1,17 +1,4 @@
-#@TYPE: Machine
-#@NAME: DH STM32MP1 DHCOM SoM on DRC02 carrier board
-#@SOC:  ST STM32MP1
-#@DESCRIPTION: Machine configuration for DH STM32MP1 DHCOM SoM on DRC02 carrier board
-
-require conf/machine/include/dh-stm32mp1-common.inc
-
-MACHINEOVERRIDES_append=":dh-stm32mp1-dhcom-drc02:dh-stm32mp1-dhcom-common-drc02:"
-
-# U-Boot bootloader
-UBOOT_MACHINE = "stm32mp15_dhcom_basic_defconfig"
-
 # U-Boot
-
 PREFERRED_PROVIDER_virtual/bootloader = "u-boot-stm32mp1-dhsom"
 PREFERRED_PROVIDER_u-boot = "u-boot-stm32mp1-dhsom"
 PREFERRED_PROVIDER_u-boot-native = "u-boot-stm32mp1-dhsom"
@@ -22,11 +9,7 @@ PREFERRED_VERSION_u-boot-native = "2021.01%"
 PREFERRED_VERSION_u-boot-fw-utils = "2021.01%"
 PREFERRED_VERSION_u-boot-fw-utils-native = "2021.01%"
 
-# Linux kernel
-KERNEL_DEVICETREE = " \
-	stm32mp153c-dhcom-drc02.dtb \
-	"
-
+# Linux
 KERNEL_DEFCONFIG = "stm32mp1_dhsom_defconfig"
 PREFERRED_PROVIDER_virtual/kernel = "linux-stm32mp1-dhsom"
 PREFERRED_VERSION_linux-stm32mp1-dhsom = "5.10%"
