@@ -11,3 +11,5 @@ PACKAGE_INSTALL_append_dh-stm32mp1-dhsom = " \
 	e2fsprogs-mke2fs \
 "
 IMAGE_FSTYPES_append_dh-stm32mp1-dhsom = " ${INITRAMFS_FSTYPES} "
+
+SWUPDATE_INIT_dh-stm32mp1-dhsom = "tiny"
