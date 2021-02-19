@@ -6,7 +6,7 @@ require recipes-extended/images/swupdate-image.inc
 IMAGE_ROOTFS_SIZE = "100000"
 
 PACKAGE_INSTALL += " \
-	u-boot-fw-utils \
+	libubootenv-bin \
 	libgpiod \
 	e2fsprogs-mke2fs \
 "
