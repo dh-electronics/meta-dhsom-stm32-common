@@ -9,4 +9,4 @@ S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
 do_configure[cleandirs] = "${B}"
 
-
+RPROVIDES_${PN} = "virtual/bootloader"
