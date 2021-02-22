@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM="file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 DEPENDS += "lzop-native bc-native"
 
 # select branch 
-SRCBRANCH = "dev/5.10.12_dhsom"
+SRCBRANCH = "dev/5.10.17_dhsom"
 
 # use latest source
 SRCREV = "${AUTOREV}"
