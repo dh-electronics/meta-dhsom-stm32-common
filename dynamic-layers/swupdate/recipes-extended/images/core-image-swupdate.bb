@@ -14,4 +14,3 @@ PACKAGE_INSTALL_append_dh-stm32mp1-dhsom = " \
 "
 IMAGE_FSTYPES_append_dh-stm32mp1-dhsom = " ${INITRAMFS_FSTYPES} "
 
-SWUPDATE_INIT_dh-stm32mp1-dhsom = "tiny"
