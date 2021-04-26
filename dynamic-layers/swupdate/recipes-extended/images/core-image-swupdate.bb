@@ -9,6 +9,8 @@ PACKAGE_INSTALL_append_dh-stm32mp1-dhsom = " \
 	libubootenv-bin \
 	libgpiod \
 	e2fsprogs-mke2fs \
+	swupdate-handler \
+	i2c-tools \
 "
 IMAGE_FSTYPES_append_dh-stm32mp1-dhsom = " ${INITRAMFS_FSTYPES} "
 
